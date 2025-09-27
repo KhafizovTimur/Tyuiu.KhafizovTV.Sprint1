@@ -35,7 +35,9 @@ namespace Tyuiu.KhafizovTV.Sprint1.Task1.V25
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                             *");
             Console.WriteLine("**************************************************************************");
 
-            Console.WriteLine(ds.Calculate(x, y));
+            double round = Math.Round(ds.Calculate(x, y), 2);
+
+            Console.WriteLine(round);
 
             Console.ReadLine();
         }
